@@ -85,9 +85,26 @@ img {
   line-height: 1.14;
   letter-spacing: 2%;
   color: #212121;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header-link::after {
+  content: "";
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  background-color: #2196f3;
+  opacity: 0;
+}
+.header-link:focus::after,
+.header-link:hover::after,
 .header-link:hover,
 .header-link:focus {
+  opacity: 1;
   color: #2196f3;
 }
 .header-tel,
@@ -101,6 +118,7 @@ img {
   line-height: 1.14;
   letter-spacing: 2%;
   color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-tel:hover .list-contacts,
@@ -154,6 +172,7 @@ img {
   letter-spacing: 6%;
   color: #ffffff;
   background-color: #2196f3;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -282,6 +301,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-social-footer:hover,
 .link-social-footer:focus,
@@ -306,6 +326,7 @@ img {
 }
 .social-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients {
   padding-top: 94px;
@@ -332,6 +353,7 @@ img {
   border-radius: 4px;
   width: 170px;
   height: 92px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list:not(:last-child) {
   margin-right: 30px;
@@ -349,6 +371,7 @@ img {
 }
 .client-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* -------footer-styles-------- */
 .footer-logo {
@@ -377,6 +400,7 @@ img {
   line-height: 1.71;
   letter-spacing: 3%;
   color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .title-address:hover,
 .title-address:focus {
@@ -390,6 +414,7 @@ img {
   line-height: 1.71;
   letter-spacing: 3%;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-address-tel {
   display: inline-block;
@@ -399,6 +424,7 @@ img {
   line-height: 1.71;
   letter-spacing: 3%;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-address-tel:focus,
 .text-address-tel:hover,
@@ -439,6 +465,7 @@ img {
   justify-content: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ------------------------------------portfolio------------------------------- */
 .button-menu:not(:last-child) {
@@ -466,6 +493,18 @@ img {
 }
 .color-nav {
   color: #2196f3;
+  position: relative;
+}
+.color-nav::after {
+  content: "";
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  background-color: #2196f3;
+  opacity: 1;
 }
 .sektion-batton-menu {
   padding-top: 94px;
